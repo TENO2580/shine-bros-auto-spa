@@ -117,9 +117,6 @@ document.addEventListener('DOMContentLoaded', () => {
         if (popup) {
             popup.classList.remove('active');
             document.body.style.overflow = ''; // Restore scrolling
-            if (popupId === 'promoPopup1') {
-                sessionStorage.setItem('popup1Closed', 'true');
-            }
         }
     };
 
@@ -152,23 +149,15 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // Timer Logic for Popup 1
-    if (!sessionStorage.getItem('popup1Shown')) {
-        setTimeout(() => {
-            if (!popup2.classList.contains('active')) {
-                popup1.classList.add('active');
-                document.body.style.overflow = 'hidden'; // Prevent background scroll
-                sessionStorage.setItem('popup1Shown', 'true');
-            }
-        }, 5000);
-    }
+    setTimeout(() => {
+        if (!popup2.classList.contains('active')) {
+            popup1.classList.add('active');
+            document.body.style.overflow = 'hidden'; // Prevent background scroll
+        }
+    }, 5000);
 
     // Scroll Logic for Popup 2
     const handleScrollForPopup = () => {
-        if (sessionStorage.getItem('popup2Shown')) {
-            window.removeEventListener('scroll', handleScrollForPopup);
-            return;
-        }
-
         const scrollHeight = document.documentElement.scrollHeight - window.innerHeight;
         // Prevent divide by zero on very short pages
         if (scrollHeight <= 0) return;
@@ -183,7 +172,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 setTimeout(() => {
                     popup2.classList.add('active');
                     document.body.style.overflow = 'hidden'; // Prevent background scroll
-                    sessionStorage.setItem('popup2Shown', 'true');
                 }, 50);
                 window.removeEventListener('scroll', handleScrollForPopup);
             }
