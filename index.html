@@ -1,0 +1,902 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shine Bros Car Wash - Get Ready to Shine</title>
+    <meta name="description" content="Professional car wash services with eco-friendly solutions to keep your car shining while protecting the environment.">
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <a href="#" class="logo">
+                <i class="fa-solid fa-car-wash"></i> Shine Bros
+            </a>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#feedback">Reviews</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <a href="#book" class="btn btn-primary">Book Now</a>
+            <button class="mobile-toggle"><i class="fa-solid fa-bars"></i></button>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-image">
+                <img src="assets/hero_car.jpg" alt="White SUV being washed">
+                <div class="eco-badge">
+                    <i class="fa-solid fa-leaf"></i>
+                    <span>ECO FRIENDLY<br>CAR WASH</span>
+                </div>
+            </div>
+            <div class="container">
+                <div class="hero-content">
+                    <span class="badge reveal fade-up">CAR WASH | DETAILING | PAINT PROTECTION</span>
+                    <h1 class="reveal fade-up delay-1">Shine Bros Car Wash<br><span class="text-green">Get Ready to Shine</span></h1>
+                    <p class="reveal fade-up delay-2">We combine professional car wash services with top-tier detailing to keep your car shining inside and out.</p>
+                    <div class="hero-actions reveal fade-up delay-3">
+                        <a href="#services" class="btn btn-primary">Explore Services</a>
+                        <a href="#blog" class="btn btn-outline">Read Our Blog</a>
+                    </div>
+                    <div class="trust-badges">
+                        <div class="trust-item"><i class="fa-solid fa-leaf text-green"></i> Eco-Friendly Products</div>
+                        <div class="trust-item"><i class="fa-solid fa-users text-green"></i> Trained Professionals</div>
+                        <div class="trust-item"><i class="fa-solid fa-shield-halved text-green"></i> Safe for Your Car</div>
+                        <div class="trust-item"><i class="fa-solid fa-star text-green"></i> 100% Satisfaction</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="services">
+            <div class="services-header-bg">
+                <div class="container services-header-container">
+                    <div class="services-header-left">
+                        <span class="badge-line badge-primary reveal fade-up">OUR SERVICES</span>
+                        <h2 class="reveal fade-up delay-1">Everything Your Car Needs</h2>
+                        <p class="reveal fade-up delay-2">From a quick wash to advanced detailing, we offer a complete range of car care services to keep your vehicle looking new, inside and out.</p>
+                        
+                        <div class="pricing-tabs">
+                            <button class="tab-btn active" onclick="openTab(event, 'cars')"><i class="fa-solid fa-car"></i> Cars</button>
+                            <button class="tab-btn" onclick="openTab(event, 'bikes')"><i class="fa-solid fa-motorcycle"></i> Two Wheelers</button>
+                            <button class="tab-btn" onclick="openTab(event, 'others')"><i class="fa-solid fa-truck-pickup"></i> Others & Add-ons</button>
+                        </div>
+                    </div>
+                    <div class="services-header-right">
+                        <div class="header-trust-badge reveal fade-right delay-1">
+                            <div class="icon-wrap"><i class="fa-solid fa-droplet text-primary"></i></div>
+                            <div class="badge-text">
+                                <strong>Premium Products</strong>
+                                <span>Safe & Eco-Friendly</span>
+                            </div>
+                        </div>
+                        <div class="header-trust-badge reveal fade-right delay-2">
+                            <div class="icon-wrap"><i class="fa-solid fa-shield-halved text-primary"></i></div>
+                            <div class="badge-text">
+                                <strong>Trained Professionals</strong>
+                                <span>Quality You Can Trust</span>
+                            </div>
+                        </div>
+                        <div class="header-trust-badge reveal fade-right delay-3">
+                            <div class="icon-wrap"><i class="fa-solid fa-leaf text-primary"></i></div>
+                            <div class="badge-text">
+                                <strong>A Cleaner Tomorrow</strong>
+                                <span>Better for You & the Planet</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container services-content-container">
+                <div id="cars" class="pricing-content active">
+                    <div class="pricing-list">
+                        <div class="price-item">
+                            <div class="card-img">
+                                <img src="assets/exterior_wash.jpg" alt="Full Wash">
+                            </div>
+                            <div class="card-content">
+                                <div class="item-details">
+                                    <h4>Full Wash</h4>
+                                    <p>Complete interior and exterior deep clean</p>
+                                </div>
+                                <div class="item-features">
+                                    <span><i class="fa-solid fa-car-side text-primary"></i> Exterior Wash</span>
+                                    <span><i class="fa-solid fa-couch text-primary"></i> Interior Cleaning</span>
+                                </div>
+                                <div class="item-prices">
+                                    <div class="price-col">
+                                        <div class="price-left">
+                                            <span class="size-label">5-Seater</span>
+                                            <strong>₹600</strong>
+                                        </div>
+                                        <div class="price-left">
+                                            <span class="size-label">8-Seater</span>
+                                            <strong>₹700</strong>
+                                        </div>
+                                    </div>
+                                    <a href="#book" class="btn btn-outline-light btn-sm mt-3 w-100 text-center">Book Now <i class="fa-solid fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="price-item popular-card">
+                            <div class="badge-popular">Most Popular</div>
+                            <div class="card-img">
+                                <img src="assets/interior_clean.jpg" alt="Half Wash">
+                            </div>
+                            <div class="card-content">
+                                <div class="item-details">
+                                    <h4>Half Wash</h4>
+                                    <p>Standard exterior wash and quick interior vacuum</p>
+                                </div>
+                                <div class="item-features">
+                                    <span><i class="fa-solid fa-car-side text-primary"></i> Exterior Wash</span>
+                                    <span><i class="fa-solid fa-wind text-primary"></i> Quick Dry</span>
+                                </div>
+                                <div class="item-prices">
+                                    <div class="price-col">
+                                        <div class="price-left">
+                                            <span class="size-label">5-Seater</span>
+                                            <strong>₹450</strong>
+                                        </div>
+                                        <div class="price-left">
+                                            <span class="size-label">8-Seater</span>
+                                            <strong>₹600</strong>
+                                        </div>
+                                    </div>
+                                    <a href="#book" class="btn btn-primary btn-sm mt-3 w-100 text-center">Book Now <i class="fa-solid fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="price-item">
+                            <div class="card-img">
+                                <img src="assets/ceramic_coat.jpg" alt="Body Only">
+                            </div>
+                            <div class="card-content">
+                                <div class="item-details">
+                                    <h4>Body Only</h4>
+                                    <p>Exterior foam wash and dry</p>
+                                </div>
+                                <div class="item-features">
+                                    <span><i class="fa-solid fa-car-side text-primary"></i> Exterior Wash</span>
+                                    <span><i class="fa-solid fa-droplet text-primary"></i> Foam Wash</span>
+                                </div>
+                                <div class="item-prices">
+                                    <div class="price-col">
+                                        <div class="price-left">
+                                            <span class="size-label">5-Seater</span>
+                                            <strong>₹300</strong>
+                                        </div>
+                                        <div class="price-left">
+                                            <span class="size-label">8-Seater</span>
+                                            <strong>₹400</strong>
+                                        </div>
+                                    </div>
+                                    <a href="#book" class="btn btn-outline-light btn-sm mt-3 w-100 text-center">Book Now <i class="fa-solid fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="bikes" class="pricing-content">
+                    <div class="pricing-list">
+                        <div class="price-item">
+                            <div class="card-img">
+                                <img src="assets/full_detail.jpg" alt="Bike Diesel (with chain)">
+                            </div>
+                            <div class="card-content">
+                                <div class="item-details">
+                                    <h4>Bike Diesel (w/ chain)</h4>
+                                    <p>Deep cleaning including chain maintenance</p>
+                                </div>
+                                <div class="item-features">
+                                    <span><i class="fa-solid fa-motorcycle text-primary"></i> Foam Wash</span>
+                                    <span><i class="fa-solid fa-link text-primary"></i> Chain Lube</span>
+                                </div>
+                                <div class="item-prices">
+                                    <div class="price-col single-price">
+                                        <strong>₹300</strong>
+                                        <a href="#book" class="btn btn-outline-light btn-sm">Book Now <i class="fa-solid fa-arrow-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="price-item">
+                            <div class="card-img">
+                                <img src="assets/exterior_wash.jpg" alt="Bike Normal">
+                            </div>
+                            <div class="card-content">
+                                <div class="item-details">
+                                    <h4>Bike Normal</h4>
+                                    <p>Standard foam wash for motorcycles</p>
+                                </div>
+                                <div class="item-features">
+                                    <span><i class="fa-solid fa-motorcycle text-primary"></i> Foam Wash</span>
+                                    <span><i class="fa-solid fa-wind text-primary"></i> Quick Dry</span>
+                                </div>
+                                <div class="item-prices">
+                                    <div class="price-col single-price">
+                                        <strong>₹200</strong>
+                                        <a href="#book" class="btn btn-outline-light btn-sm">Book Now <i class="fa-solid fa-arrow-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="price-item">
+                            <div class="card-img">
+                                <img src="assets/interior_clean.jpg" alt="Scooty Normal">
+                            </div>
+                            <div class="card-content">
+                                <div class="item-details">
+                                    <h4>Scooty Normal</h4>
+                                    <p>Standard foam wash for scooters</p>
+                                </div>
+                                <div class="item-features">
+                                    <span><i class="fa-solid fa-motorcycle text-primary"></i> Foam Wash</span>
+                                </div>
+                                <div class="item-prices">
+                                    <div class="price-col single-price">
+                                        <strong>₹150</strong>
+                                        <a href="#book" class="btn btn-outline-light btn-sm">Book Now <i class="fa-solid fa-arrow-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="others" class="pricing-content">
+                    <div class="pricing-list">
+                        <div class="price-item">
+                            <div class="card-img">
+                                <img src="assets/ceramic_coat.jpg" alt="Pic UP Full Wash">
+                            </div>
+                            <div class="card-content">
+                                <div class="item-details">
+                                    <h4>Pic UP Full Wash</h4>
+                                    <p>Complete cleaning for pickup trucks</p>
+                                </div>
+                                <div class="item-features">
+                                    <span><i class="fa-solid fa-truck-pickup text-primary"></i> Exterior</span>
+                                    <span><i class="fa-solid fa-couch text-primary"></i> Interior</span>
+                                </div>
+                                <div class="item-prices">
+                                    <div class="price-col single-price">
+                                        <strong>₹600</strong>
+                                        <a href="#book" class="btn btn-outline-light btn-sm">Book Now <i class="fa-solid fa-arrow-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="price-item popular-card">
+                            <div class="badge-popular">Most Popular</div>
+                            <div class="card-img">
+                                <img src="assets/full_detail.jpg" alt="Pic UP Half Wash">
+                            </div>
+                            <div class="card-content">
+                                <div class="item-details">
+                                    <h4>Pic UP Half Wash</h4>
+                                    <p>Standard cleaning for pickup trucks</p>
+                                </div>
+                                <div class="item-features">
+                                    <span><i class="fa-solid fa-truck-pickup text-primary"></i> Exterior</span>
+                                    <span><i class="fa-solid fa-wind text-primary"></i> Quick Dry</span>
+                                </div>
+                                <div class="item-prices">
+                                    <div class="price-col single-price">
+                                        <strong>₹500</strong>
+                                        <a href="#book" class="btn btn-primary btn-sm">Book Now <i class="fa-solid fa-arrow-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="price-item">
+                            <div class="card-img">
+                                <img src="assets/exterior_wash.jpg" alt="Thar Full Wash">
+                            </div>
+                            <div class="card-content">
+                                <div class="item-details">
+                                    <h4>Thar Full Wash</h4>
+                                    <p>Specialized deep cleaning for Mahindra Thar</p>
+                                </div>
+                                <div class="item-features">
+                                    <span><i class="fa-solid fa-truck text-primary"></i> Deep Clean</span>
+                                    <span><i class="fa-solid fa-dharmachakra text-primary"></i> Tires</span>
+                                </div>
+                                <div class="item-prices">
+                                    <div class="price-col single-price">
+                                        <strong>₹700</strong>
+                                        <a href="#book" class="btn btn-outline-light btn-sm">Book Now <i class="fa-solid fa-arrow-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="price-item">
+                            <div class="card-img">
+                                <img src="assets/engine_bay.jpg" alt="Engine Room Cleaning">
+                            </div>
+                            <div class="card-content">
+                                <div class="item-details">
+                                    <h4>Engine Room Cleaning</h4>
+                                    <p>Safe and thorough engine bay detailing</p>
+                                </div>
+                                <div class="item-features">
+                                    <span><i class="fa-solid fa-gears text-primary"></i> Degreasing</span>
+                                    <span><i class="fa-solid fa-shield-halved text-primary"></i> Protection</span>
+                                </div>
+                                <div class="item-prices">
+                                    <div class="price-col single-price">
+                                        <strong>₹300</strong>
+                                        <a href="#book" class="btn btn-outline-light btn-sm">Book Now <i class="fa-solid fa-arrow-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="price-item">
+                            <div class="card-img">
+                                <img src="assets/headlights.jpg" alt="Under Foam Wash">
+                            </div>
+                            <div class="card-content">
+                                <div class="item-details">
+                                    <h4>Under Foam Wash</h4>
+                                    <p>Underbody cleaning with foam</p>
+                                </div>
+                                <div class="item-features">
+                                    <span><i class="fa-solid fa-car text-primary"></i> Underbody</span>
+                                    <span><i class="fa-solid fa-droplet text-primary"></i> Foam</span>
+                                </div>
+                                <div class="item-prices">
+                                    <div class="price-col single-price">
+                                        <strong>₹100</strong>
+                                        <a href="#book" class="btn btn-outline-light btn-sm">Book Now <i class="fa-solid fa-arrow-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="price-item">
+                            <div class="card-img">
+                                <img src="assets/interior_clean.jpg" alt="Under Chemical Wash">
+                            </div>
+                            <div class="card-content">
+                                <div class="item-details">
+                                    <h4>Under Chemical Wash</h4>
+                                    <p>Intensive underbody chemical treatment</p>
+                                </div>
+                                <div class="item-features">
+                                    <span><i class="fa-solid fa-flask text-primary"></i> Chemical</span>
+                                    <span><i class="fa-solid fa-shield-virus text-primary"></i> Anti-Rust</span>
+                                </div>
+                                <div class="item-prices">
+                                    <div class="price-col single-price">
+                                        <strong>₹200</strong>
+                                        <a href="#book" class="btn btn-outline-light btn-sm">Book Now <i class="fa-solid fa-arrow-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="container mt-5 pt-5 pb-5">
+                <div class="trust-bar">
+                    <div class="trust-bar-item">
+                        <i class="fa-solid fa-leaf text-primary"></i>
+                        <div>
+                            <strong>Eco-Friendly Products</strong>
+                            <span>Safe for your car & the environment</span>
+                        </div>
+                    </div>
+                    <div class="trust-bar-item">
+                        <i class="fa-solid fa-users text-primary"></i>
+                        <div>
+                            <strong>Trained Professionals</strong>
+                            <span>Experienced & certified team</span>
+                        </div>
+                    </div>
+                    <div class="trust-bar-item">
+                        <i class="fa-solid fa-location-dot text-primary"></i>
+                        <div>
+                            <strong>Convenient Location</strong>
+                            <span>Easy access for everyone</span>
+                        </div>
+                    </div>
+                    <div class="trust-bar-item">
+                        <i class="fa-solid fa-star text-primary"></i>
+                        <div>
+                            <strong>100% Satisfaction</strong>
+                            <span>Our customers love us</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Eco-Friendly / Why Choose Us -->
+        <section id="about" class="eco-friendly">
+            <div class="container">
+                <div class="eco-content">
+                    <span class="badge-line badge-light reveal fade-up">WHY CHOOSE SHINE BROS</span>
+                    <h2 class="reveal fade-up delay-1">A Cleaner Car. A <span class="text-green-light">Greener Planet.</span></h2>
+                    <p class="reveal fade-up delay-2">We are committed to providing high-quality car care services using eco-friendly products and sustainable practices.</p>
+                    
+                    <div class="eco-features">
+                        <div class="feature"><i class="fa-solid fa-leaf"></i> Eco-Friendly Products</div>
+                        <div class="feature"><i class="fa-solid fa-users"></i> Experienced Professionals</div>
+                        <div class="feature"><i class="fa-solid fa-location-dot"></i> Convenient Locations</div>
+                        <div class="feature"><i class="fa-solid fa-shield-check"></i> Trusted by 10,000+ Customers</div>
+                    </div>
+                </div>
+                <div class="eco-video reveal scale-in delay-3">
+                    <div class="play-btn">
+                        <i class="fa-solid fa-play"></i>
+                    </div>
+                    <div class="video-text">
+                        <strong>Watch Our Story</strong>
+                        <span>Cleaner Cars. Greener Planet.</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section id="gallery" class="gallery-section">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="badge-line reveal fade-up">OUR WORK</span>
+                    <h2 class="reveal fade-up delay-1">Photos & Videos</h2>
+                </div>
+                <div class="gallery-grid">
+                    <div class="gallery-item reveal scale-in delay-1"><img src="assets/exterior_wash.jpg" alt="Gallery Image 1"></div>
+                    <div class="gallery-item reveal scale-in delay-2"><img src="assets/interior_clean.jpg" alt="Gallery Image 2"></div>
+                    <div class="gallery-item reveal scale-in delay-3"><img src="assets/full_detail.jpg" alt="Gallery Image 3"></div>
+                    <div class="gallery-item video-item reveal scale-in delay-4">
+                        <img src="assets/ceramic_coat.jpg" alt="Video Thumbnail">
+                        <i class="fa-solid fa-play play-icon"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Feedback Section -->
+        <section id="feedback" class="feedback-section bg-gray">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="badge-line reveal fade-up">CUSTOMER FEEDBACK</span>
+                    <h2 class="reveal fade-up delay-1">What Our Clients Say</h2>
+                </div>
+                <div class="feedback-grid">
+                    <div class="feedback-card reveal fade-up delay-1">
+                        <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                        <p>"Nice experience must visit full restoration, ceramic wash"</p>
+                        <h4>- Muhammed Sherwin</h4>
+                    </div>
+                    <div class="feedback-card reveal fade-up delay-2">
+                        <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                        <p>"Excellent service and attention to detail. Highly recommend for deep cleaning."</p>
+                        <h4>- Sulficker Ksa</h4>
+                    </div>
+                    <div class="feedback-card reveal fade-up delay-3">
+                        <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                        <p>"Fast, professional, and super friendly. The ceramic coating they did was top-notch. Worth every penny."</p>
+                        <h4>- David R.</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Blog & Popular Searches -->
+        <section id="blog" class="blog-section">
+            <div class="container">
+                <div class="blog-layout">
+                    <div class="blog-main">
+                        <div class="section-header space-between">
+                            <div>
+                                <span class="badge-line">LATEST FROM OUR BLOG</span>
+                                <h2>Car Care Tips, Maintenance Guides and More.</h2>
+                            </div>
+                            <a href="blog.html" class="text-green view-all">View All Posts <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                        <div class="blog-grid">
+                            <article class="blog-card">
+                                <img src="assets/blog_1.jpg" alt="Car Maintenance Tips">
+                                <div class="blog-info">
+                                    <h3>10 Easy Car Maintenance Tips for a Longer Life</h3>
+                                    <div class="blog-footer">
+                                        <span>15 Sep 2026</span>
+                                        <a href="blog-1.html" class="text-green">Read More <i class="fa-solid fa-arrow-right"></i></a>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="blog-card">
+                                <img src="assets/exterior_wash.jpg" alt="How Often Wash">
+                                <div class="blog-info">
+                                    <h3>How Often Should You Wash Your Car?</h3>
+                                    <div class="blog-footer">
+                                        <span>10 Sep 2026</span>
+                                        <a href="blog-2.html" class="text-green">Read More <i class="fa-solid fa-arrow-right"></i></a>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="blog-card">
+                                <img src="assets/interior_clean.jpg" alt="Cleaning Products">
+                                <div class="blog-info">
+                                    <h3>Best Car Cleaning Products in 2026</h3>
+                                    <div class="blog-footer">
+                                        <span>05 Sep 2026</span>
+                                        <a href="blog-3.html" class="text-green">Read More <i class="fa-solid fa-arrow-right"></i></a>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="blog-card">
+                                <img src="assets/ceramic_coat.jpg" alt="Ceramic Coating">
+                                <div class="blog-info">
+                                    <h3>Is Ceramic Coating Worth the Investment?</h3>
+                                    <div class="blog-footer">
+                                        <span>28 Aug 2026</span>
+                                        <a href="blog-4.html" class="text-green">Read More <i class="fa-solid fa-arrow-right"></i></a>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="popular-searches">
+                        <h3><i class="fa-solid fa-magnifying-glass text-green"></i> Popular Searches</h3>
+                        <ul>
+                            <li><a href="#services"><i class="fa-solid fa-arrow-right text-green"></i> Best car wash near me</a></li>
+                            <li><a href="#services"><i class="fa-solid fa-arrow-right text-green"></i> Premium car detailing in Choorakkode</a></li>
+                            <li><a href="#services"><i class="fa-solid fa-arrow-right text-green"></i> Affordable car wash in Pallipadi</a></li>
+                            <li><a href="#services"><i class="fa-solid fa-arrow-right text-green"></i> Ceramic coating services in Kerala</a></li>
+                            <li><a href="#services"><i class="fa-solid fa-arrow-right text-green"></i> Car interior deep cleaning near me</a></li>
+                            <li><a href="#services"><i class="fa-solid fa-arrow-right text-green"></i> Two-wheeler wash and chain lube</a></li>
+                            <li><a href="#services"><i class="fa-solid fa-arrow-right text-green"></i> Engine bay cleaning and degreasing</a></li>
+                            <li><a href="#about"><i class="fa-solid fa-arrow-right text-green"></i> Eco-friendly car wash near me</a></li>
+                            <li><a href="#services"><i class="fa-solid fa-arrow-right text-green"></i> Mahindra Thar specialized washing</a></li>
+                            <li><a href="#services"><i class="fa-solid fa-arrow-right text-green"></i> Pickup truck deep cleaning</a></li>
+                            <li><a href="#services"><i class="fa-solid fa-arrow-right text-green"></i> Underbody foam wash & anti-rust</a></li>
+                            <li><a href="#contact"><i class="fa-solid fa-arrow-right text-green"></i> Auto spa open today</a></li>
+                            <li><a href="#services"><i class="fa-solid fa-arrow-right text-green"></i> Car wash price list 2026</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA & Stats -->
+        <section id="book" class="cta-section">
+            <div class="container">
+                <div class="cta-content">
+                    <span class="badge-line badge-primary reveal fade-left">READY FOR A CLEANER RIDE?</span>
+                    <h2 class="mb-3 reveal fade-left delay-1">Book Your Car Wash Today</h2>
+                    <p class="mb-4 reveal fade-left delay-2">Experience professional car care with Shine Bros.</p>
+                    <div class="d-flex gap-3 mt-4">
+                        <a href="#contact" class="btn btn-primary"><i class="fa-regular fa-calendar-check me-2"></i> Book Now</a>
+                        <a href="tel:+918921844866" class="btn btn-outline-light"><i class="fa-solid fa-phone me-2"></i> Call Us</a>
+                    </div>
+                </div>
+                <div class="cta-stats">
+                    <div class="stat-item reveal fade-right delay-1">
+                        <i class="fa-solid fa-users"></i>
+                        <h3>10K+</h3>
+                        <p>Happy Customers</p>
+                    </div>
+                    <div class="stat-item reveal fade-right delay-2">
+                        <i class="fa-regular fa-star"></i>
+                        <h3>5.0/5</h3>
+                        <p>66+ Google Reviews</p>
+                    </div>
+                    <div class="stat-item reveal fade-right delay-3">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <h3>5+</h3>
+                        <p>Convenient Locations</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="badge-line reveal fade-up">GET IN TOUCH</span>
+                    <h2 class="reveal fade-up delay-1">Contact Us</h2>
+                </div>
+                <div class="contact-grid">
+                    <div class="contact-info reveal fade-left delay-2">
+                        <div class="info-item">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <div>
+                                <h4>Our Location</h4>
+                                <p><a href="https://www.google.com/maps/dir//Shine+Bros+Auto+Spa,+Pallipadi,+Choorakkode,+Keralam+679336/@9.9434654,76.3521509,15z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3ba7c57250f399d9:0xfbac68a38a43b9d0!2m2!1d76.22999!2d10.8257762?hl=en-IN&entry=ttu&g_ep=EgoyMDI2MDkxNi4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer" style="color: var(--secondary-color); font-weight: 600; text-decoration: underline;">Shine Bros Auto Spa, Pallipadi,<br>Choorakkode, Kerala 679336</a></p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fa-solid fa-phone"></i>
+                            <div>
+                                <h4>Call Us</h4>
+                                <p>+91 8921844866</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fa-solid fa-envelope"></i>
+                            <div>
+                                <h4>Email Us</h4>
+                                <p>hello@shinebroscarwash.com</p>
+                            </div>
+                        </div>
+                    </div>
+                    <form class="contact-form reveal fade-right delay-3">
+                        <input type="text" placeholder="Your Name" required>
+                        <input type="email" placeholder="Your Email" required>
+                        <textarea rows="4" placeholder="Your Message" required></textarea>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="logo">
+                        <i class="fa-solid fa-car-wash"></i> Shine Bros Car Wash
+                    </a>
+                    <p>Your trusted partner for professional car wash and detailing services. We care for your car and the environment.</p>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/p/Shine-Bros-Auto-Spa-61588641463879/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/shine_bros__/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#blog">Blog</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Our Services</h4>
+                    <ul>
+                        <li><a href="#">Exterior Wash</a></li>
+                        <li><a href="#">Interior Cleaning</a></li>
+                        <li><a href="#">Full Detailing</a></li>
+                        <li><a href="#">Ceramic Coating</a></li>
+                        <li><a href="#">Engine Bay Cleaning</a></li>
+                        <li><a href="#">Headlight Restoration</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact Us</h4>
+                    <ul>
+                        <li><a href="https://www.google.com/maps/dir//Shine+Bros+Auto+Spa,+Pallipadi,+Choorakkode,+Keralam+679336/@9.9434654,76.3521509,15z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3ba7c57250f399d9:0xfbac68a38a43b9d0!2m2!1d76.22999!2d10.8257762?hl=en-IN&entry=ttu&g_ep=EgoyMDI2MDkxNi4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer" style="color: inherit;"><i class="fa-solid fa-location-dot"></i> Shine Bros Auto Spa, Pallipadi, Choorakkode, Kerala 679336</a></li>
+                        <li><i class="fa-solid fa-phone"></i> +91 8921844866</li>
+                        <li><i class="fa-solid fa-envelope"></i> hello@shinebroscarwash.com</li>
+                        <li><i class="fa-regular fa-clock"></i> Mon - Sun: 8:00 AM - 7:00 PM</li>
+                    </ul>
+                </div>
+                <div class="footer-newsletter">
+                    <h4>Subscribe to Our Newsletter</h4>
+                    <p>Get the latest car care tips, offers and updates.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your email address" required>
+                        <button type="submit" class="btn btn-primary">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Shine Bros Car Wash. All rights reserved.</p>
+                <div class="legal-links">
+                    <a href="privacy-policy.html">Privacy Policy</a>
+                    <a href="terms-of-service.html">Terms of Service</a>
+                    <a href="sitemap.html">Sitemap</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Booking Modal -->
+    <div id="bookingModal" class="modal-overlay">
+        <div class="modal-container">
+            <span class="close-modal"><i class="fa-solid fa-xmark"></i></span>
+            <div class="modal-header text-center">
+                <span class="badge-line badge-primary">BOOK NOW</span>
+                <h2 class="mb-2">Schedule Your Wash</h2>
+                <p>Fill out the details below and we will confirm your appointment.</p>
+            </div>
+            <form class="booking-form-modal">
+                <div class="form-group-row">
+                    <div class="form-group">
+                        <label>Your Name</label>
+                        <input type="text" placeholder="John Doe" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Phone Number</label>
+                        <input type="tel" placeholder="+91 8921844866" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>Vehicle Type & Service</label>
+                    <select required id="modalServiceSelect">
+                        <option value="">Select Wash Type</option>
+                        <optgroup label="Cars (5/8 Seater)">
+                            <option value="car_full">Full Wash</option>
+                            <option value="car_half">Half Wash</option>
+                            <option value="car_body">Body Only</option>
+                        </optgroup>
+                        <optgroup label="Two Wheelers">
+                            <option value="bike_diesel">Bike Diesel (with chain)</option>
+                            <option value="bike_normal">Bike Normal</option>
+                            <option value="scooty_normal">Scooty Normal</option>
+                        </optgroup>
+                        <optgroup label="Others & Add-ons">
+                            <option value="pickup_full">Pic UP Full Wash</option>
+                            <option value="pickup_half">Pic UP Half Wash</option>
+                            <option value="thar_full">Thar Full Wash</option>
+                            <option value="engine_room">Engine Room Cleaning</option>
+                            <option value="under_foam">Under Foam Wash</option>
+                            <option value="under_chemical">Under Chemical Wash</option>
+                        </optgroup>
+                    </select>
+                </div>
+                <div class="form-group-row">
+                    <div class="form-group">
+                        <label>Preferred Date</label>
+                        <input type="date" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Preferred Time</label>
+                        <input type="time" required>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary w-100 mt-3">Confirm Booking</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Promotional Popups -->
+    <!-- Popup 1: Timer Offer -->
+    <div id="promoPopup1" class="promo-popup-overlay">
+        <div class="promo-popup-modal promo-popup-1">
+            <button class="promo-close-btn" aria-label="Close" data-close="promoPopup1"><i class="fa-solid fa-xmark"></i></button>
+            <div class="promo-img-wrapper">
+                <img src="assets/hero_car.jpg" alt="Professional Shine Bros car wash and detailing service" loading="lazy">
+            </div>
+            <div class="promo-content">
+                <span class="promo-badge">LIMITED TIME OFFER</span>
+                <h3 class="promo-headline">Give Your Car the Shine It Deserves ✨</h3>
+                <p class="promo-subheading">Get premium car wash & detailing services from Shine Bros.</p>
+                <div class="promo-offer">20% OFF</div>
+                <p class="promo-supporting">Book your first wash today and save.</p>
+                <a href="#book" class="btn btn-primary promo-btn" data-close="promoPopup1">BOOK NOW</a>
+                <span class="promo-secondary-text">Limited-time offer</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Popup 2: Scroll Offer -->
+    <div id="promoPopup2" class="promo-popup-overlay">
+        <div class="promo-popup-modal promo-popup-2">
+            <button class="promo-close-btn" aria-label="Close" data-close="promoPopup2"><i class="fa-solid fa-xmark"></i></button>
+            <div class="promo-img-wrapper">
+                <img src="assets/full_detail.jpg" alt="Car detailing and polishing service at Shine Bros" loading="lazy">
+            </div>
+            <div class="promo-content">
+                <span class="promo-badge">SHINE BROS SPECIAL</span>
+                <h3 class="promo-headline">Your Car Deserves More Than a Basic Wash</h3>
+                <p class="promo-text">Upgrade to our premium detailing package and give your car a showroom finish.</p>
+                
+                <div class="promo-cards">
+                    <div class="promo-card">
+                        <h4>FULL DETAILING</h4>
+                        <span>From ₹899</span>
+                    </div>
+                    <div class="promo-card">
+                        <h4>CERAMIC PROTECTION</h4>
+                        <span>From ₹4,999</span>
+                    </div>
+                </div>
+
+                <div class="promo-actions">
+                    <a href="#services" class="btn promo-btn-secondary" data-close="promoPopup2">VIEW SERVICES</a>
+                    <a href="#book" class="btn btn-primary promo-btn" data-close="promoPopup2">BOOK NOW</a>
+                </div>
+                <span class="promo-secondary-text">Limited availability</span>
+            </div>
+        </div>
+    </div>
+    <!-- Floating Action Buttons: WhatsApp + Chatbot -->
+    <div class="floating-actions">
+        <a href="https://wa.me/918921844866?text=Hi%20Shine%20Bros!%20I%27d%20like%20to%20know%20more%20about%20your%20services." class="fab-whatsapp" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
+            <i class="fa-brands fa-whatsapp"></i>
+        </a>
+        <button class="fab-chatbot" id="chatbotToggle" aria-label="Open chat">
+            <i class="fa-solid fa-comments"></i>
+        </button>
+    </div>
+
+    <!-- Chatbot Widget -->
+    <div class="chatbot-widget" id="chatbotWidget">
+        <div class="chatbot-header">
+            <div class="chatbot-header-info">
+                <div class="chatbot-avatar"><i class="fa-solid fa-car-wash"></i></div>
+                <div>
+                    <strong>Shine Bros</strong>
+                    <span class="chatbot-status">Online</span>
+                </div>
+            </div>
+            <button class="chatbot-close" id="chatbotClose" aria-label="Close chat"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <div class="chatbot-messages" id="chatbotMessages">
+            <!-- Messages will be injected by JS -->
+        </div>
+        <div class="chatbot-quick-actions" id="chatbotQuickActions">
+            <button data-query="pricing">💰 Pricing</button>
+            <button data-query="services">🚗 Services</button>
+            <button data-query="location">📍 Location</button>
+            <button data-query="contact">📞 Contact</button>
+            <button data-query="hours">🕐 Hours</button>
+            <button data-query="book">📅 Book Now</button>
+        </div>
+        <div class="chatbot-input-area">
+            <input type="text" id="chatbotInput" placeholder="Ask about our services..." autocomplete="off">
+            <button id="chatbotSend" aria-label="Send message"><i class="fa-solid fa-paper-plane"></i></button>
+        </div>
+    </div>
+
+    <!-- Scroll Reveal Animations -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const reveals = document.querySelectorAll('.reveal');
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, {
+                threshold: 0.05,
+                rootMargin: '0px 0px -20px 0px'
+            });
+            
+            reveals.forEach(el => observer.observe(el));
+        });
+    </script>
+
+    <script src="script.js"></script>
+</body>
+</html>

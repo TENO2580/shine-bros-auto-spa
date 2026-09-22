@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Shine Bros Car Wash</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .blog-header {
+            padding: 150px 0 60px;
+            background-color: var(--bg-gray);
+            text-align: center;
+        }
+        .blog-header h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+        .blog-header p {
+            font-size: 1.1rem;
+            color: var(--text-color);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .blog-grid-page {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 30px;
+            padding: 60px 0;
+        }
+        .blog-card {
+            background: #fff;
+            border-radius: var(--radius);
+            overflow: hidden;
+            box-shadow: var(--shadow-md);
+            transition: var(--transition);
+            display: flex;
+            flex-direction: column;
+        }
+        .blog-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-lg);
+        }
+        .blog-card img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+        }
+        .blog-info {
+            padding: 25px;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+        .blog-info h3 {
+            font-size: 1.25rem;
+            margin-bottom: 15px;
+        }
+        .blog-info p {
+            color: var(--text-color);
+            margin-bottom: 20px;
+            flex-grow: 1;
+        }
+        .blog-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.9rem;
+            color: #888;
+            border-top: 1px solid var(--border-color);
+            padding-top: 15px;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container" style="display: flex; justify-content: space-between; align-items: center;">
+            <a href="index.html" class="logo">
+                <i class="fa-solid fa-car-wash"></i> Shine Bros
+            </a>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#services">Services</a></li>
+                    <li><a href="blog.html" class="active">Blog</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="blog-header">
+        <div class="container">
+            <h1>Our Blog</h1>
+            <p>Car Care Tips, Maintenance Guides, and Everything You Need to Know to Keep Your Ride Shining.</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="blog-grid-page">
+            <!-- Blog Post 1 -->
+            <article class="blog-card">
+                <img src="assets/blog_1.jpg" onerror="this.src='assets/hero_car.jpg'" alt="Car Maintenance Tips">
+                <div class="blog-info">
+                    <h3>10 Easy Car Maintenance Tips for a Longer Life</h3>
+                    <p>Discover simple but effective ways to maintain your vehicle's health and extend its lifespan with these expert tips.</p>
+                    <div class="blog-footer">
+                        <span>15 Sep 2026</span>
+                        <a href="#" class="text-green">Read More <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </article>
+            
+            <!-- Blog Post 2 -->
+            <article class="blog-card">
+                <img src="assets/exterior_wash.jpg" onerror="this.src='assets/hero_car.jpg'" alt="How Often Wash">
+                <div class="blog-info">
+                    <h3>How Often Should You Wash Your Car?</h3>
+                    <p>Is washing your car every week too much? Find out the ideal frequency to protect your car's paint without overdoing it.</p>
+                    <div class="blog-footer">
+                        <span>10 Sep 2026</span>
+                        <a href="#" class="text-green">Read More <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </article>
+            
+            <!-- Blog Post 3 -->
+            <article class="blog-card">
+                <img src="assets/interior_clean.jpg" onerror="this.src='assets/hero_car.jpg'" alt="Cleaning Products">
+                <div class="blog-info">
+                    <h3>Best Car Cleaning Products in 2026</h3>
+                    <p>We review the top eco-friendly and highly effective cleaning products that the pros use to get that showroom shine.</p>
+                    <div class="blog-footer">
+                        <span>05 Sep 2026</span>
+                        <a href="#" class="text-green">Read More <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Blog Post 4 -->
+            <article class="blog-card">
+                <img src="assets/ceramic_coat.jpg" onerror="this.src='assets/hero_car.jpg'" alt="Ceramic Coating">
+                <div class="blog-info">
+                    <h3>Is Ceramic Coating Worth the Investment?</h3>
+                    <p>Everything you need to know about ceramic coatings, from how long they last to the ultimate benefits for your car's exterior.</p>
+                    <div class="blog-footer">
+                        <span>28 Aug 2026</span>
+                        <a href="#" class="text-green">Read More <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </article>
+            
+            <!-- Blog Post 5 -->
+            <article class="blog-card">
+                <img src="assets/engine_bay.jpg" onerror="this.src='assets/hero_car.jpg'" alt="Engine Bay">
+                <div class="blog-info">
+                    <h3>Safe Engine Bay Cleaning Guide</h3>
+                    <p>Cleaning under the hood can be intimidating. Here is a step-by-step guide to safely clean your engine bay without damaging electronics.</p>
+                    <div class="blog-footer">
+                        <span>14 Aug 2026</span>
+                        <a href="#" class="text-green">Read More <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </article>
+            
+            <!-- Blog Post 6 -->
+            <article class="blog-card">
+                <img src="assets/headlights.jpg" onerror="this.src='assets/hero_car.jpg'" alt="Headlights">
+                <div class="blog-info">
+                    <h3>Restoring Foggy Headlights at Home</h3>
+                    <p>Foggy headlights can be a safety hazard. Learn how to restore them to crystal clarity using common household items or cheap kits.</p>
+                    <div class="blog-footer">
+                        <span>02 Aug 2026</span>
+                        <a href="#" class="text-green">Read More <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </div>
+
+    <footer class="footer" style="padding: 40px 0; background: var(--secondary-color); color: white; text-align: center;">
+        <div class="container">
+            <p>&copy; 2026 Shine Bros Car Wash. All rights reserved.</p>
+            <div style="margin-top: 15px;">
+                <a href="index.html" style="color: white; margin: 0 10px;">Back to Home</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
