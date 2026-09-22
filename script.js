@@ -116,7 +116,6 @@ document.addEventListener('DOMContentLoaded', () => {
         const popup = document.getElementById(popupId);
         if (popup) {
             popup.classList.remove('active');
-            document.body.style.overflow = ''; // Restore scrolling
         }
     };
 
@@ -152,7 +151,6 @@ document.addEventListener('DOMContentLoaded', () => {
     setTimeout(() => {
         if (!popup2.classList.contains('active')) {
             popup1.classList.add('active');
-            document.body.style.overflow = 'hidden'; // Prevent background scroll
         }
     }, 5000);
 
@@ -171,7 +169,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 // Slight delay to allow CSS transitions
                 setTimeout(() => {
                     popup2.classList.add('active');
-                    document.body.style.overflow = 'hidden'; // Prevent background scroll
                 }, 50);
                 window.removeEventListener('scroll', handleScrollForPopup);
             }
