@@ -80,9 +80,28 @@ document.addEventListener('DOMContentLoaded', () => {
         if (bookingForm) {
             bookingForm.addEventListener('submit', (e) => {
                 e.preventDefault();
-                alert('Thank you for booking! We will contact you shortly to confirm your appointment.');
-                bookingModal.classList.remove('active');
-                bookingForm.reset();
+                
+                const btn = bookingForm.querySelector('button[type="submit"]');
+                const originalText = btn.innerHTML;
+                
+                // Show success state
+                btn.innerHTML = '<i class="fa-solid fa-check me-2"></i> Booking Confirmed!';
+                btn.style.backgroundColor = '#28a745';
+                btn.style.borderColor = '#28a745';
+                btn.style.color = '#fff';
+                
+                setTimeout(() => {
+                    bookingModal.classList.remove('active');
+                    bookingForm.reset();
+                    
+                    // Reset button state after modal closes
+                    setTimeout(() => {
+                        btn.innerHTML = originalText;
+                        btn.style.backgroundColor = '';
+                        btn.style.borderColor = '';
+                        btn.style.color = '';
+                    }, 300);
+                }, 2000);
             });
         }
     }
