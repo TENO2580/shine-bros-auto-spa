@@ -1337,6 +1337,9 @@ section {
     .cta-content {
         margin: 0 auto;
     }
+    .cta-content .d-flex {
+        justify-content: center;
+    }
 }
 
 @media (max-width: 768px) {
