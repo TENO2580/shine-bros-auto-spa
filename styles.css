@@ -16,6 +16,17 @@
     --shadow-lg: 0 10px 20px rgba(0,0,0,0.1);
 }
 
+[data-theme="dark"] {
+    --bg-color: #121212;
+    --bg-gray: #1e1e1e;
+    --text-color: #e0e0e0;
+    --secondary-color: #ffffff; /* White for headings on dark bg */
+    --border-color: #333333;
+    --shadow-sm: 0 2px 4px rgba(0,0,0,0.2);
+    --shadow-md: 0 4px 8px rgba(0,0,0,0.3);
+    --shadow-lg: 0 10px 20px rgba(0,0,0,0.4);
+}
+
 /* Reset & Base */
 * {
     margin: 0;
@@ -130,7 +141,7 @@ p {
 }
 
 .btn-outline-light:hover {
-    background-color: #fff;
+    background: var(--bg-color);
     color: var(--secondary-color);
     border-color: #fff;
 }
@@ -186,7 +197,7 @@ p {
     top: 0;
     left: 0;
     width: 100%;
-    background-color: rgba(255, 255, 255, 0.95);
+    background-color: var(--bg-color);
     backdrop-filter: blur(10px);
     z-index: 1000;
     padding: 15px 0;
@@ -307,7 +318,7 @@ p {
     position: absolute;
     bottom: 50px;
     left: 40px;
-    background-color: #fff;
+    background: var(--bg-color);
     padding: 15px 25px;
     border-radius: var(--radius);
     box-shadow: var(--shadow-md);
@@ -876,7 +887,7 @@ section {
 .blog-card {
     border-radius: var(--radius);
     overflow: hidden;
-    background-color: #fff;
+    background: var(--bg-color);
     box-shadow: var(--shadow-sm);
     transition: var(--transition);
     border: 1px solid var(--border-color);
@@ -1277,7 +1288,7 @@ section {
 }
 
 .feedback-card {
-    background-color: #fff;
+    background: var(--bg-color);
     padding: 30px;
     border-radius: var(--radius);
     box-shadow: var(--shadow-sm);
@@ -1448,7 +1459,7 @@ section {
 }
 
 .modal-container {
-    background-color: #fff;
+    background: var(--bg-color);
     width: 90%;
     max-width: 600px;
     border-radius: var(--radius);
@@ -1622,7 +1633,7 @@ section {
 }
 
 .promo-popup-modal {
-    background-color: #ffffff;
+    background: var(--bg-color);
     border-radius: 20px;
     box-shadow: var(--shadow-lg);
     position: relative;
@@ -1688,7 +1699,7 @@ section {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: #fff;
+    background: var(--bg-color);
     color: var(--secondary-color);
 }
 
@@ -1995,7 +2006,7 @@ section {
     right: 30px;
     width: 380px;
     max-height: 520px;
-    background: #fff;
+    background: var(--bg-color);
     border-radius: 16px;
     box-shadow: 0 12px 40px rgba(0, 0, 0, 0.18);
     z-index: 8500;
@@ -2107,7 +2118,7 @@ section {
 }
 
 .chat-msg.bot {
-    background: #fff;
+    background: var(--bg-color);
     color: var(--secondary-color);
     border-bottom-left-radius: 4px;
     align-self: flex-start;
@@ -2187,7 +2198,7 @@ section {
     display: flex;
     flex-wrap: wrap;
     gap: 6px;
-    background: #fff;
+    background: var(--bg-color);
     border-top: 1px solid #eee;
 }
 
@@ -2214,7 +2225,7 @@ section {
     padding: 12px 14px;
     gap: 8px;
     border-top: 1px solid #eee;
-    background: #fff;
+    background: var(--bg-color);
 }
 
 .chatbot-input-area input {
