@@ -230,11 +230,13 @@ p {
 
 .mobile-toggle {
     display: none;
-    background: none;
+    background: rgba(0, 0, 0, 0.05);
     border: none;
     font-size: 1.5rem;
     cursor: pointer;
     color: var(--secondary-color);
+    padding: 8px 12px;
+    border-radius: 8px;
 }
 
 /* Hero Section */
@@ -1358,6 +1360,16 @@ section {
     }
     .cta-content .d-flex {
         justify-content: center;
+        flex-direction: row;
+        width: 100%;
+    }
+    .cta-content .d-flex .btn {
+        flex: 1;
+        padding: 12px 10px;
+        font-size: 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }
 
@@ -1378,13 +1390,20 @@ section {
     }
     .cta-stats {
         flex-direction: column;
-        gap: 30px;
-        width: auto;
-        padding: 30px;
+        gap: 0;
+        width: 100%;
+        padding: 10px 30px;
         margin: 0 auto;
-        align-items: center;
+        align-items: stretch;
         justify-content: center;
         text-align: center;
+    }
+    .cta-stats .stat-item {
+        padding: 30px 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    }
+    .cta-stats .stat-item:last-child {
+        border-bottom: none;
     }
     .footer-grid {
         grid-template-columns: 1fr;
