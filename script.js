@@ -425,11 +425,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // Dark Mode Toggle Logic
 document.addEventListener('DOMContentLoaded', () => {
-    const themeToggle = document.getElementById('theme-toggle');
-    if (!themeToggle) return;
     const root = document.documentElement;
-    const icon = themeToggle.querySelector('i');
-
+    
     // Check local storage for theme preference
     const savedTheme = localStorage.getItem('theme');
     
@@ -438,21 +435,30 @@ document.addEventListener('DOMContentLoaded', () => {
     
     if (savedTheme === 'dark' || (!savedTheme && systemPrefersDark)) {
         root.setAttribute('data-theme', 'dark');
-        icon.classList.remove('fa-moon');
-        icon.classList.add('fa-sun');
     }
 
-    themeToggle.addEventListener('click', () => {
+    const themeToggle = document.getElementById('theme-toggle');
+    if (themeToggle) {
+        const icon = themeToggle.querySelector('i');
+        
+        // Sync icon on load
         if (root.getAttribute('data-theme') === 'dark') {
-            root.removeAttribute('data-theme');
-            localStorage.setItem('theme', 'light');
-            icon.classList.remove('fa-sun');
-            icon.classList.add('fa-moon');
-        } else {
-            root.setAttribute('data-theme', 'dark');
-            localStorage.setItem('theme', 'dark');
             icon.classList.remove('fa-moon');
             icon.classList.add('fa-sun');
         }
-    });
+
+        themeToggle.addEventListener('click', () => {
+            if (root.getAttribute('data-theme') === 'dark') {
+                root.removeAttribute('data-theme');
+                localStorage.setItem('theme', 'light');
+                icon.classList.remove('fa-sun');
+                icon.classList.add('fa-moon');
+            } else {
+                root.setAttribute('data-theme', 'dark');
+                localStorage.setItem('theme', 'dark');
+                icon.classList.remove('fa-moon');
+                icon.classList.add('fa-sun');
+            }
+        });
+    }
 });

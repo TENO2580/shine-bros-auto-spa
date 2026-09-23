@@ -2103,7 +2103,7 @@ section {
     gap: 12px;
     min-height: 220px;
     max-height: 300px;
-    background: #f7f8fa;
+    background: var(--bg-gray);
 }
 
 /* Message Bubbles */
@@ -2203,17 +2203,17 @@ section {
     flex-wrap: wrap;
     gap: 6px;
     background: var(--bg-color);
-    border-top: 1px solid #eee;
+    border-top: 1px solid var(--border-color);
 }
 
 .chatbot-quick-actions button {
-    background: #f0f1f5;
-    border: none;
+    background: var(--bg-gray);
+    border: 1px solid var(--border-color);
     padding: 6px 14px;
     border-radius: 20px;
     font-size: 0.78rem;
     font-weight: 600;
-    color: var(--secondary-color);
+    color: var(--text-color);
     cursor: pointer;
     transition: var(--transition);
 }
@@ -2228,13 +2228,15 @@ section {
     display: flex;
     padding: 12px 14px;
     gap: 8px;
-    border-top: 1px solid #eee;
+    border-top: 1px solid var(--border-color);
     background: var(--bg-color);
 }
 
 .chatbot-input-area input {
     flex: 1;
-    border: 1px solid #e0e0e0;
+    border: 1px solid var(--border-color);
+    background: var(--bg-color);
+    color: var(--text-color);
     border-radius: 25px;
     padding: 10px 18px;
     font-size: 0.88rem;
