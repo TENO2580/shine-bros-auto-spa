@@ -2291,9 +2291,9 @@ section {
 
 /* Visible state */
 .reveal.visible {
-    opacity: 1;
-    transform: none;
-    filter: none;
+    opacity: 1 !important;
+    transform: none !important;
+    filter: none !important;
 }
 
 /* --- Animation Variants --- */
