@@ -1382,6 +1382,9 @@ section {
         width: auto;
         padding: 30px;
         margin: 0 auto;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
     }
     .footer-grid {
         grid-template-columns: 1fr;
