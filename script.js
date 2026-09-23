@@ -5,22 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (mobileToggle) {
         mobileToggle.addEventListener('click', () => {
-            nav.style.display = nav.style.display === 'block' ? 'none' : 'block';
-            if (nav.style.display === 'block') {
-                nav.style.position = 'absolute';
-                nav.style.top = '100%';
-                nav.style.left = '0';
-                nav.style.width = '100%';
-                nav.style.backgroundColor = '#fff';
-                nav.style.padding = '20px';
-                nav.style.boxShadow = '0 10px 20px rgba(0,0,0,0.1)';
-                
-                const navList = nav.querySelector('.nav-list');
-                navList.style.flexDirection = 'column';
-                navList.style.alignItems = 'center';
-            } else {
-                nav.style = '';
-            }
+            nav.classList.toggle('nav-open');
         });
     }
 

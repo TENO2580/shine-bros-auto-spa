@@ -26,6 +26,7 @@
 html {
     scroll-behavior: smooth;
     overflow-x: hidden;
+    scroll-padding-top: 80px;
 }
 
 body {
@@ -76,12 +77,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-    font-size: 3.5rem;
+    font-size: clamp(2rem, 8vw, 3.5rem);
     letter-spacing: -1px;
 }
 
 h2 {
-    font-size: 2.5rem;
+    font-size: clamp(1.8rem, 6vw, 2.5rem);
     letter-spacing: -0.5px;
 }
 
@@ -370,8 +371,30 @@ section {
     .nav {
         display: none;
     }
+    .nav.nav-open {
+        display: block;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: var(--primary-dark);
+        padding: 20px;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+        z-index: 1000;
+    }
+    .nav.nav-open .nav-list {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
     .header .btn-primary {
         display: none;
+    }
+    .nav.nav-open .header-mobile-cta {
+        display: block !important;
+        text-align: center;
+        margin-top: 15px;
+        width: 100%;
     }
     .mobile-toggle {
         display: block;
@@ -379,18 +402,14 @@ section {
     .hero {
         padding-top: 100px;
     }
-    h1 {
-        font-size: 2.2rem;
-    }
+
     .hero-image {
         height: 250px;
     }
     .services-header-bg {
         padding: 40px 0 100px;
     }
-    .services-header-left h2 {
-        font-size: 2.2rem;
-    }
+
 }
 
 /* --- Services Section Redesign --- */
@@ -1346,6 +1365,12 @@ section {
     .eco-features {
         grid-template-columns: 1fr;
     }
+    .pricing-list, .blog-grid, .feedback-grid {
+        grid-template-columns: 1fr;
+    }
+    .gallery-grid {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
     .space-between {
         flex-direction: column;
         align-items: flex-start;
@@ -1358,6 +1383,9 @@ section {
     }
     .footer-grid {
         grid-template-columns: 1fr;
+    }
+    .footer {
+        padding-bottom: 120px;
     }
     .footer-newsletter {
         grid-column: span 1;
@@ -1551,7 +1579,7 @@ section {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     background-color: rgba(0, 0, 0, 0.7); /* Dark transparent backdrop */
     backdrop-filter: blur(5px);
@@ -1591,18 +1619,19 @@ section {
     position: absolute;
     top: 15px;
     right: 15px;
-    background: rgba(0, 0, 0, 0.1);
+    background: rgba(255, 255, 255, 0.9);
+    color: #333;
     border: none;
     width: 32px;
     height: 32px;
     border-radius: 50%;
     cursor: pointer;
     font-size: 1.1rem;
-    color: var(--secondary-color);
     display: flex;
     align-items: center;
     justify-content: center;
     z-index: 10;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
     transition: var(--transition);
 }
 
@@ -2215,7 +2244,7 @@ section {
     }
 
     .chatbot-widget {
-        width: calc(100vw - 32px);
+        width: calc(100% - 32px);
         right: 16px;
         bottom: 96px;
         max-height: 70vh;
