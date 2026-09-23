@@ -15,6 +15,7 @@
     --shadow-md: 0 4px 8px rgba(0,0,0,0.1);
     --shadow-lg: 0 10px 20px rgba(0,0,0,0.1);
     --overlay-rgb: 11, 29, 58; /* Used for gradients over images */
+    --accent-bg: #0b1d3a; /* Deep blue for dark elements in light theme */
 }
 
 [data-theme="dark"] {
@@ -27,6 +28,7 @@
     --shadow-md: 0 4px 8px rgba(0,0,0,0.3);
     --shadow-lg: 0 10px 20px rgba(0,0,0,0.4);
     --overlay-rgb: 18, 18, 18; /* Replaces the dark blue overlay with dark gray */
+    --accent-bg: #1e1e1e; /* Dark surface for dark elements in dark theme */
 }
 
 /* Reset & Base */
@@ -1539,7 +1541,7 @@ section {
 
 /* --- Blog Post Detail Pages --- */
 .blog-post-header {
-    background-color: var(--secondary-color);
+    background-color: var(--accent-bg);
     color: #fff;
     padding: 120px 0 60px;
     text-align: center;
@@ -1782,7 +1784,7 @@ section {
 /* Popup 2: Scroll Offer */
 .promo-popup-2 {
     width: 750px;
-    background-color: var(--secondary-color);
+    background-color: var(--accent-bg);
     color: #fff;
     display: flex;
     flex-direction: row;
@@ -1976,7 +1978,7 @@ section {
     width: 56px;
     height: 56px;
     border-radius: 50%;
-    background: var(--secondary-color);
+    background: var(--accent-bg);
     color: var(--primary-color);
     border: none;
     display: flex;
@@ -2029,7 +2031,7 @@ section {
 
 /* Header */
 .chatbot-header {
-    background: var(--secondary-color);
+    background: var(--accent-bg);
     color: #fff;
     padding: 16px 20px;
     display: flex;
@@ -2128,7 +2130,7 @@ section {
 }
 
 .chat-msg.user {
-    background: var(--secondary-color);
+    background: var(--accent-bg);
     color: #fff;
     border-bottom-right-radius: 4px;
     align-self: flex-end;
