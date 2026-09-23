@@ -1378,8 +1378,10 @@ section {
     }
     .cta-stats {
         flex-direction: column;
-        gap: 20px;
-        width: 100%;
+        gap: 30px;
+        width: auto;
+        padding: 30px;
+        margin: 0 auto;
     }
     .footer-grid {
         grid-template-columns: 1fr;
